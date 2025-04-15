@@ -28,6 +28,7 @@ export default function useMutation(method, resource, tagsToInvalidate) {
     } finally {
       setLoading(false);
     }
+    return false;
   };
 
   return { mutate, data, loading, error };
